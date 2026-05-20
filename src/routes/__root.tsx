@@ -104,14 +104,21 @@ function RootShell({ children }: { children: React.ReactNode }) {
   );
 }
 
-const navItems = [
+type NavItem = {
+  to: "/" | "/email" | "/meetings" | "/tasks" | "/research" | "/chat";
+  label: string;
+  icon: typeof LayoutDashboard;
+  exact?: boolean;
+};
+
+const navItems: NavItem[] = [
   { to: "/", label: "Dashboard", icon: LayoutDashboard, exact: true },
   { to: "/email", label: "Email Generator", icon: Mail },
   { to: "/meetings", label: "Meeting Notes", icon: FileText },
   { to: "/tasks", label: "Task Planner", icon: ListTodo },
   { to: "/research", label: "Research", icon: Search },
   { to: "/chat", label: "AI Chat", icon: MessageSquare },
-] as const;
+];
 
 function Sidebar() {
   const pathname = useRouterState({ select: (s) => s.location.pathname });
