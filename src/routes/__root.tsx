@@ -73,6 +73,15 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         content:
           "AI workplace assistant for drafting emails, summarizing meetings, planning tasks, researching topics, and chatting with an AI copilot.",
       },
+      { property: "og:title", content: "Lumina AI — Workplace Productivity Assistant" },
+      { name: "twitter:title", content: "Lumina AI — Workplace Productivity Assistant" },
+      { name: "description", content: "AI Workplace Productivity Assistant automates professional tasks with AI-powered tools." },
+      { property: "og:description", content: "AI Workplace Productivity Assistant automates professional tasks with AI-powered tools." },
+      { name: "twitter:description", content: "AI Workplace Productivity Assistant automates professional tasks with AI-powered tools." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/20a71555-024b-4443-ae88-319c577ae1c1/id-preview-fb285732--283ca411-5d26-4c0c-b939-4a3ddfa457df.lovable.app-1779277235550.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/20a71555-024b-4443-ae88-319c577ae1c1/id-preview-fb285732--283ca411-5d26-4c0c-b939-4a3ddfa457df.lovable.app-1779277235550.png" },
+      { name: "twitter:card", content: "summary_large_image" },
+      { property: "og:type", content: "website" },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
